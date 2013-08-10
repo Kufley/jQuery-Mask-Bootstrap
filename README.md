@@ -1,3 +1,5 @@
+<link href="http://opensource.noweb.com.br/jquerymask-bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
 jQueryMask-Bootstrap
 ====================
 
@@ -10,10 +12,11 @@ This is a masked input plugin for the jQuery javascript library. It allows a use
 Instalation
 ====================
 
-First, include the jQuery and masked input javascript files.
-
+<pre class="prettyprint linenums">
 <script src="jquery.js" type="text/javascript"></script>
 <script src="jquery.maskedinput.js" type="text/javascript"></script>
+</pre>
+
 Next, call the mask function for those items you wish to have masked.
 
 jQuery(function($){
@@ -22,6 +25,7 @@ jQuery(function($){
    $("#tin").mask("99-9999999");
    $("#ssn").mask("999-99-9999");
 });
+
 Optionally, if you are not satisfied with the underscore ('_') character as a placeholder, you may pass an optional argument to the maskedinput method.
 
 jQuery(function($){
@@ -49,3 +53,8 @@ jQuery(function($){
    $("#phone").mask("#hhhhhh");
 });
 By design, this plugin will reject input which doesn't complete the mask. You can bypass this by using a '?' character at the position where you would like to consider input optional. For example, a mask of "(999) 999-9999? x99999" would require only the first 10 digits of a phone number with extension being optional.
+
+
+<script src="http://opensource.noweb.com.br/jquerymask-bootstrap/js/holder/holder.js"></script>
+<script src="http://opensource.noweb.com.br/jquerymask-bootstrap/js/google-code-prettify/prettify.js"></script>
+<script src="http://opensource.noweb.com.br/jquerymask-bootstrap/js/application.js"></script>
